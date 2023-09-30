@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import Swal from 'sweetalert2'
 import './login.css';
-
+import usuarioService from '../../service/usuarioService';
 
 function Login() {
 
@@ -18,6 +18,10 @@ function Login() {
 
       return;
    }
+   
+   usuarioService.authorizathion(email, password)
+   .then(response => 
+    console.log(response))
   }
 
     return (
