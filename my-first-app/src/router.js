@@ -1,6 +1,5 @@
 import Login from "./pages/login";
 import Home from "./pages/home";
-import Client from "./pages/clients";
 import Product from "./pages/products";
 import Menu from './components/menu'
 
@@ -16,7 +15,6 @@ function Router(){
             <Routes>
                 <Route path="/login" element={<Login/>}/>
                 <Route exact path="/" element={<Home/>}/>
-                <Route path="/clientes" element={<Client/>}/>
                 <Route path="/produtos" element={<Product/>}/>
             </Routes>
         </BrowserRouter>
